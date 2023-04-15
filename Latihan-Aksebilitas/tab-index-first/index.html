@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024px" />
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <title>Tab Index</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>focus order dengan menggunakan atribut tabindex :</h3>
+      <div class="row">
+        <button tabindex="3" style="float: right;">🦁️ Leo</button>
+        <button tabindex="1" style="float: left;">🦂️ Scorpio</button>
+        <button tabindex="2" style="float: left;">🦄️ Unicorn</button>
+      </div>
+      <div class="row">
+        <button tabindex="5" style="float: none;">🐃️ Taurus</button>
+        <button tabindex="4" style="float: left;">🐏️ Capricon</button>
+        <button tabindex="6" style="float: right;">🐟️ Pisces</button>
+      </div>
+    </div>
+    <!--     
+    Daripada menetapkan atribut tabindex dengan nilai lebih dari 1, 
+    sebaiknya kita atur struktur DOM hingga tab order dapat memiliki urutan yang wajar.
+    -->
+    <div class="container">
+      <h3>focus order default (DOM tidak teratur):</h3>
+      <div class="row">
+        <button style="float: right;">🦁️ Leo</button>
+        <button style="float: left;">🦂️ Scorpio</button>
+        <button style="float: left;">🦄️ Unicorn</button>
+      </div>
+      <div class="row">
+        <button style="float: none;">🐃️ Taurus</button>
+        <button style="float: left;">🐏️ Capricon</button>
+        <button style="float: right;">🐟️ Pisces</button>
+      </div>
+    </div>
+    <div class="container">
+      <h3>focus order dengan mengatur struktur DOM :</h3>
+      <div class="row">
+        <button style="float: left;">🦁️ Leo</button>
+        <button style="float: left;">🦂️ Scorpio</button>
+        <button style="float: right;">🦄️ Unicorn</button>
+      </div>
+      <div class="row">
+        <button style="float: left;">🐃️ Taurus</button>
+        <button style="float: left;">🐏️ Capricon</button>
+        <button style="float: right;">🐟️ Pisces</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <title>Negatif Tab Order</title>
+  </head>
+  <body>
+    <button tabindex="-1" id="foo">Saya tidak memiliki tab order</button>
+    <button onclick="foo.focus()">Fokuskan ke tombol sebelah</button>
+  </body>
+</html>

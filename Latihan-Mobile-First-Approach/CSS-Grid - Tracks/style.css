@@ -1,0 +1,11 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 100px 200px;
+    grid-template-rows: 50px 100px;
+}
+
+/* styling pendukung */
+.wrapper div {
+    border: 1px dashed black;
+    padding: 20px;
+}

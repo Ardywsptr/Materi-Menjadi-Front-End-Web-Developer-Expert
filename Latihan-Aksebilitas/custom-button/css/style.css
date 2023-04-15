@@ -1,0 +1,39 @@
+button {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+}
+
+button:hover {
+  background: yellow;
+}
+
+button:active {
+  background: greenyellow;
+}
+
+.button {
+  display: inline;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  cursor: default;
+  user-select: none;
+}
+
+.button:hover {
+  background: yellow;
+}
+
+.button:active {
+  background: greenyellow;
+}

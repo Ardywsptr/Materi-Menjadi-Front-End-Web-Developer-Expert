@@ -1,0 +1,20 @@
+.wrapper {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ; */
+    grid-template-columns: repeat(6, 1fr);
+    /* repeat tidak seragam : */
+    /* grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr ; */
+    /* grid-template-columns: repeat(3, 1fr 2fr); */
+} 
+/* styling pendukung */
+.wrapper div {
+    border: 1px dashed black;
+    padding: 16px;
+    background-color: white;
+}
+    
+.wrapper {
+    padding: 8px;
+    background-color: antiquewhite;
+    border: 1px dashed black;
+}

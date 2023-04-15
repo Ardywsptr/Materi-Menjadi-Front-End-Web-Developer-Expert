@@ -1,0 +1,44 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gutter */
+    /* row-gap: 20px;
+    column-gap: 10px; */
+    /* shorthand gutter*/
+    gap: 20px 10px; /* baris kolom */
+} 
+/* grid lines */
+.box1{
+    grid-column-start: 1; /* box1 akan dimulai dari kolom garis pertama */
+    grid-column-end: 3; /* dan berakhir di kolom garis ketiga */
+}
+
+.box2{
+    grid-column-start: 3; /* box2 akan dimulai dari kolom garis ketiga */
+    grid-row-start: 1; /* dan baris garis pertama */
+    grid-row-end: 3; /* kemudian berakhir di baris garis ketiga */
+}
+
+.box3{
+    grid-column-start: 1; /* box1 akan dimulai dari kolom garis pertama */
+    grid-column-end: 3; /* dan berakhir di kolom garis ketiga */
+}
+
+
+/* styling pendukung */
+.wrapper div {
+    border: 1px solid black;
+    padding: 32px;
+}
+/* coloring */
+.box1, .box4 {
+    background-color: mediumseagreen;
+}
+
+.box2, .box6 {
+    background-color: steelblue;
+}
+
+.box3, .box5 {
+    background-color: gold;
+}
